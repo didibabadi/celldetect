@@ -1,12 +1,8 @@
-# buchong-824 pipeline
 
-Minimal scripts for YOLO training, tiled prediction/visualization, and proliferating-cell segmentation/counting.
+scripts for YOLO training, tiled prediction/visualization, and proliferating-cell segmentation/counting.
 
 ```bash
-cd /data20T2/QMXdata/chang/yolo/buchong824_pipeline
 python train.py --device 0
 python predict.py --device cpu
 python count.py
 ```
-
-`predict.py` writes visualizations, proliferating-cell crops, and `detections.csv`. `count.py` writes every mask and count while marking uncertain results as `review_required`. See `README.CN` for details.
